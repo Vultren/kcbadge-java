@@ -23,7 +23,7 @@ USE `kcbadge` ;
 DROP TABLE IF EXISTS `kcbadge`.`ship_class` ;
 
 CREATE TABLE IF NOT EXISTS `kcbadge`.`ship_class` (
-  `id` INT(11) NOT NULL,
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
   `name_en` VARCHAR(45) NULL DEFAULT NULL,
   `name_jp` VARCHAR(45) NULL DEFAULT NULL,
   `name_ch` VARCHAR(45) NULL DEFAULT NULL,
@@ -71,7 +71,6 @@ DROP TABLE IF EXISTS `kcbadge`.`ship` ;
 
 CREATE TABLE IF NOT EXISTS `kcbadge`.`ship` (
   `id` INT(11) NOT NULL,
-  `fleet_id` INT(11) NULL DEFAULT NULL,
   `ship_type` VARCHAR(3) NOT NULL,
   `ship_class` INT(11) NOT NULL,
   `offset_id` INT(11) NULL,
@@ -162,6 +161,7 @@ DROP TABLE IF EXISTS `kcbadge`.`kanmusu` ;
 
 CREATE TABLE IF NOT EXISTS `kcbadge`.`kanmusu` (
   `id` INT(11) NOT NULL,
+  `fleet_id` INT(11) NULL DEFAULT NULL,
   `rarity_id` INT(11) NOT NULL,
   `ship_id` INT(11) NOT NULL,
   PRIMARY KEY (`id`),
