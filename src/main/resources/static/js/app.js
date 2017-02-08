@@ -1,1 +1,3 @@
-var app = angular.module('BadgeApp',[]);
+'use strict';
+
+angular.module('BadgeApp',['badgeCanvas', 'kantaiTabs']);
