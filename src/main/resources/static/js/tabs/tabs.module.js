@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('kantaiTabs',[]);
+angular.module('kantaiTabs',['ui.router','teitokuInfo', 'shipFleet', 'kaiNi', 'furniture', 'shipCollection']);

@@ -200,6 +200,15 @@ CREATE TABLE IF NOT EXISTS `kcbadge`.`abyssal` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = latin1;
 
+DROP TABLE IF EXISTS `kcbadge`.`servers` ;
+
+CREATE TABLE `kcbadge`.`servers` (
+  `id` int(11) NOT NULL,
+  `name_en` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
+  `name_jp` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;

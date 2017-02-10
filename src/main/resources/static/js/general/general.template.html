@@ -1,0 +1,31 @@
+<h2>Info</h2>
+
+<div>
+	Admiral Name <input type="text" name="name" maxlength="26"
+		placeholder="Admiral Name">
+</div>
+<div>
+	Lv. <input type="number" name="level" min="1" max="120"
+		placeholder="1 - 120">
+</div>
+<div>
+	Server <select name="server" data-ng-model="selectedServer" data-ng-options="s.name_jp + ' ' + s.name_en for s in servers">
+		<option value="" disabled selected value="0">------</option>
+	</select>
+</div>
+<br />
+<div>
+	Avatar Image: <input type='file' id="avatarImg" />
+	<button type="button" id="avatarClear">Clear</button>
+</div>
+<br />
+<div>
+	Use Furniture<input type="checkbox" name="useBG" id="useBG" checked>
+</div>
+<div>
+	Use Fleets<input type="checkbox" name="k2" id="k2">
+</div>
+<div>
+	Ignore Blueprint<input type="checkbox" name="useBlue" id="useBlue"
+		checked>
+</div>

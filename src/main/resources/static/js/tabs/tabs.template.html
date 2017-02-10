@@ -1,17 +1,23 @@
-<div class="nav">
+<div ng-app="kantaiTabs" class="nav">
 <ul>
 	<li>
-		<a href="#kaini">Kai Ni + Blueprints</a>
+		<a ui-sref="general">General</a>
 	</li>
 	<li>
-		<a href="#poster">Collection</a>
+		<a ui-sref="shipFleet">Ships</a>
 	</li>
 	<li>
-		<a href="#furniture">Furniture</a>
+		<a ui-sref="kaini">Kai Ni + Blueprints</a>
+	</li>
+	<li>
+		<a ui-sref="poster">Collection</a>
+	</li>
+	<li>
+		<a ui-sref="furniture">Furniture</a>
 	</li>
 </ul>
 </div>
-
-<br />
+<div id="mainContent">
+<div ui-view> </div>
 
 </div>
